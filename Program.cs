@@ -1,5 +1,7 @@
-﻿using Snake.Enums;
+﻿using Snake;
+using Snake.Enums;
 
+GameControl gameControl = new();
 Exception? exception = null;
 int speedInput;
 string prompt = $"Select speed [1], [2] (default), or [3]: ";
@@ -36,7 +38,7 @@ try
 	Console.Clear();
 	snake.Enqueue((X, Y));
 	map[X, Y] = Tile.Snake;
-	PositionFood();
+	gameControl.PositionFood(map, width, height);
 	Console.SetCursorPosition(X, Y);
 	Console.Write('@');
 	while (!direction.HasValue && !closeRequested)
@@ -71,7 +73,7 @@ try
 		snake.Enqueue((X, Y));
 		if (map[X, Y] is Tile.Food)
 		{
-			PositionFood();
+			gameControl.PositionFood(map, width, height);
 		}
 		else
 		{
@@ -112,25 +114,4 @@ void GetDirection()
 		case ConsoleKey.Escape: closeRequested = true; break;
 	}
 }
-
-void PositionFood()
-{
-	List<(int X, int Y)> possibleCoordinates = new();
-	for (int i = 0; i < width; i++)
-	{
-		for (int j = 0; j < height; j++)
-		{
-			if (map[i, j] is Tile.Open)
-			{
-				possibleCoordinates.Add((i, j));
-			}
-		}
-	}
-	int index = Random.Shared.Next(possibleCoordinates.Count);
-	(int X, int Y) = possibleCoordinates[index];
-	map[X, Y] = Tile.Food;
-	Console.SetCursorPosition(X, Y);
-	Console.Write('+');
-}
-
 

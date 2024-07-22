@@ -8,19 +8,19 @@
     "net8.0": []
   },
   "packageFolders": {
-    "C:\\Users\\mrvid\\.nuget\\packages\\": {}
+    "/home/vasyl/.nuget/packages/": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\projects\\github\\games\\snake\\snake\\snake.csproj",
+      "projectUniqueName": "/home/vasyl/projects/demo/snake/snake.csproj",
       "projectName": "snake",
-      "projectPath": "C:\\projects\\github\\games\\snake\\snake\\snake.csproj",
-      "packagesPath": "C:\\Users\\mrvid\\.nuget\\packages\\",
-      "outputPath": "C:\\projects\\github\\games\\snake\\snake\\obj\\",
+      "projectPath": "/home/vasyl/projects/demo/snake/snake.csproj",
+      "packagesPath": "/home/vasyl/.nuget/packages/",
+      "outputPath": "/home/vasyl/projects/demo/snake/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\mrvid\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "/home/vasyl/.nuget/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net8.0"
@@ -38,11 +38,6 @@
         "warnAsError": [
           "NU1605"
         ]
-      },
-      "restoreAuditProperties": {
-        "enableAudit": "true",
-        "auditLevel": "low",
-        "auditMode": "direct"
       }
     },
     "frameworks": {
@@ -64,7 +59,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.303/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "/usr/lib/dotnet/sdk/8.0.107/PortableRuntimeIdentifierGraph.json"
       }
     }
   }

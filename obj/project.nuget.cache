@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "RRcA9B6AxvI=",
+  "dgSpecHash": "19MS7NZDepzn7Zv9OEPQXxTWjGEswYezPQ7lJYHMdqaBgWjazW22SObofmdOFH+rDMuijG6F5GWvzMBkhd4xDg==",
   "success": true,
-  "projectFilePath": "C:\\projects\\github\\games\\snake\\snake\\snake.csproj",
+  "projectFilePath": "/home/vasyl/projects/demo/snake/snake.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

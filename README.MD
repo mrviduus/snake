@@ -25,10 +25,3 @@ v>>>>>>>>>>>>>
 
 > resizing the console window will cause the game to close
 
-## Downloads
-
-[win-x64](https://github.com/dotnet/dotnet-console-games/raw/binaries/win-x64/Snake.exe)
-
-[linux-x64](https://github.com/dotnet/dotnet-console-games/raw/binaries/linux-x64/Snake)
-
-[osx-x64](https://github.com/dotnet/dotnet-console-games/raw/binaries/osx-x64/Snake)
